@@ -1,12 +1,7 @@
 name: pytest-ranking CI
 
 on:
-  merge_group:
-  # push:
-    branches-ignore:
-    # disabled for jaraco/skeleton#103
-    # - gh-readonly-queue/**  # Temporary merge queue-related GH-made branches
-  pull_request:
+  push:
   workflow_dispatch:
 
 concurrency:
