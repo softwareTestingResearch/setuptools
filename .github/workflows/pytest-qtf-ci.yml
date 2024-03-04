@@ -72,6 +72,9 @@ jobs:
       - name: Run
         run: tox
 
+      - name: List pytest cache
+        run: ls -Rl ${{ github.workspace }}/.pytest_cache
+
       - name: Save pytest-ranking cache
         id: save-pytest-ranking-cache
         if: always()
